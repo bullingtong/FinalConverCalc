@@ -15,6 +15,9 @@ class ConverterViewController: UIViewController {
     @IBOutlet weak var inputDisplay: UITextField!
     
     var currentConv: Int = 0
+    var sign: Bool = false
+    var number: Double = 0
+    
     
     
     
@@ -26,8 +29,8 @@ class ConverterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.outputDisplay.text = "" + self.converters[0].outputUnit
-        self.inputDisplay.text = "" + self.converters[0].inputUnit
+        self.outputDisplay.text = "" + self.converters[currentConv].outputUnit
+        self.inputDisplay.text = "" + self.converters[currentConv].inputUnit
         // Do any additional setup after loading the view.
     }
     
@@ -75,10 +78,35 @@ class ConverterViewController: UIViewController {
     @IBAction func numberClick(_ sender: UIButton) {
         if sender.titleLabel!.text != "."{
             inputDisplay.text = inputDisplay.text! + sender.titleLabel!.text!
+            if let numDub = Double(inputDisplay.text!){
+                number = numDub
+            }
+            
         } else{
             inputDisplay.text = inputDisplay.text! + "."
+            if let numDub = Double(inputDisplay.text!){
+                number = numDub
+            }
         }
-        
+    }
+    
+    
+    @IBAction func signChange(_ sender: UIButton) {
+        if sign == false {
+            number = number * -1
+            sign = true
+            if(inputDisplay.text != "" || inputDisplay.text == nil){
+                inputDisplay.text = "-" + inputDisplay.text!
+            }else{
+                sign = false
+                return
+            }
+        }
+        else{
+            number = number * -1
+            sign = false
+            inputDisplay.text = String(number)
+            }
         
     }
     
