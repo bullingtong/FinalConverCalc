@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68B16D4E225BA78B00A74BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B16D4D225BA78A00A74BEB /* AppDelegate.swift */; };
+		68B16D53225BA78B00A74BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B16D51225BA78B00A74BEB /* Main.storyboard */; };
+		68B16D55225BA78C00A74BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B16D54225BA78C00A74BEB /* Assets.xcassets */; };
+		68B16D58225BA78C00A74BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B16D56225BA78C00A74BEB /* LaunchScreen.storyboard */; };
+		68B16D63225BA78D00A74BEB /* BullingtongConversionCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B16D62225BA78D00A74BEB /* BullingtongConversionCalcTests.swift */; };
+		68B16D6E225BA78D00A74BEB /* BullingtongConversionCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B16D6D225BA78D00A74BEB /* BullingtongConversionCalcUITests.swift */; };
+		68B16D7E225BBB9D00A74BEB /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B16D7D225BBB9D00A74BEB /* ConverterViewController.swift */; };
+		68B16D80225BC90400A74BEB /* ConverterStruc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B16D7F225BC90400A74BEB /* ConverterStruc.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68B16D5F225BA78D00A74BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B16D42225BA78A00A74BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68B16D49225BA78A00A74BEB;
+			remoteInfo = BullingtongConversionCalc;
+		};
+		68B16D6A225BA78D00A74BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B16D42225BA78A00A74BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68B16D49225BA78A00A74BEB;
+			remoteInfo = BullingtongConversionCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68B16D4A225BA78A00A74BEB /* BullingtongConversionCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullingtongConversionCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B16D4D225BA78A00A74BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68B16D52225BA78B00A74BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68B16D54225BA78C00A74BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68B16D57225BA78C00A74BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68B16D59225BA78C00A74BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B16D5E225BA78D00A74BEB /* BullingtongConversionCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullingtongConversionCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B16D62225BA78D00A74BEB /* BullingtongConversionCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullingtongConversionCalcTests.swift; sourceTree = "<group>"; };
+		68B16D64225BA78D00A74BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B16D69225BA78D00A74BEB /* BullingtongConversionCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullingtongConversionCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B16D6D225BA78D00A74BEB /* BullingtongConversionCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullingtongConversionCalcUITests.swift; sourceTree = "<group>"; };
+		68B16D6F225BA78D00A74BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B16D7D225BBB9D00A74BEB /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		68B16D7F225BC90400A74BEB /* ConverterStruc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterStruc.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68B16D47225BA78A00A74BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B16D5B225BA78D00A74BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B16D66225BA78D00A74BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68B16D41225BA78A00A74BEB = {
+			isa = PBXGroup;
+			children = (
+				68B16D4C225BA78A00A74BEB /* BullingtongConversionCalc */,
+				68B16D61225BA78D00A74BEB /* BullingtongConversionCalcTests */,
+				68B16D6C225BA78D00A74BEB /* BullingtongConversionCalcUITests */,
+				68B16D4B225BA78A00A74BEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68B16D4B225BA78A00A74BEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B16D4A225BA78A00A74BEB /* BullingtongConversionCalc.app */,
+				68B16D5E225BA78D00A74BEB /* BullingtongConversionCalcTests.xctest */,
+				68B16D69225BA78D00A74BEB /* BullingtongConversionCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68B16D4C225BA78A00A74BEB /* BullingtongConversionCalc */ = {
+			isa = PBXGroup;
+			children = (
+				68B16D4D225BA78A00A74BEB /* AppDelegate.swift */,
+				68B16D51225BA78B00A74BEB /* Main.storyboard */,
+				68B16D54225BA78C00A74BEB /* Assets.xcassets */,
+				68B16D56225BA78C00A74BEB /* LaunchScreen.storyboard */,
+				68B16D59225BA78C00A74BEB /* Info.plist */,
+				68B16D7D225BBB9D00A74BEB /* ConverterViewController.swift */,
+				68B16D7F225BC90400A74BEB /* ConverterStruc.swift */,
+			);
+			path = BullingtongConversionCalc;
+			sourceTree = "<group>";
+		};
+		68B16D61225BA78D00A74BEB /* BullingtongConversionCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				68B16D62225BA78D00A74BEB /* BullingtongConversionCalcTests.swift */,
+				68B16D64225BA78D00A74BEB /* Info.plist */,
+			);
+			path = BullingtongConversionCalcTests;
+			sourceTree = "<group>";
+		};
+		68B16D6C225BA78D00A74BEB /* BullingtongConversionCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68B16D6D225BA78D00A74BEB /* BullingtongConversionCalcUITests.swift */,
+				68B16D6F225BA78D00A74BEB /* Info.plist */,
+			);
+			path = BullingtongConversionCalcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68B16D49225BA78A00A74BEB /* BullingtongConversionCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B16D72225BA78D00A74BEB /* Build configuration list for PBXNativeTarget "BullingtongConversionCalc" */;
+			buildPhases = (
+				68B16D46225BA78A00A74BEB /* Sources */,
+				68B16D47225BA78A00A74BEB /* Frameworks */,
+				68B16D48225BA78A00A74BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BullingtongConversionCalc;
+			productName = BullingtongConversionCalc;
+			productReference = 68B16D4A225BA78A00A74BEB /* BullingtongConversionCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68B16D5D225BA78D00A74BEB /* BullingtongConversionCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B16D75225BA78D00A74BEB /* Build configuration list for PBXNativeTarget "BullingtongConversionCalcTests" */;
+			buildPhases = (
+				68B16D5A225BA78D00A74BEB /* Sources */,
+				68B16D5B225BA78D00A74BEB /* Frameworks */,
+				68B16D5C225BA78D00A74BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68B16D60225BA78D00A74BEB /* PBXTargetDependency */,
+			);
+			name = BullingtongConversionCalcTests;
+			productName = BullingtongConversionCalcTests;
+			productReference = 68B16D5E225BA78D00A74BEB /* BullingtongConversionCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68B16D68225BA78D00A74BEB /* BullingtongConversionCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B16D78225BA78D00A74BEB /* Build configuration list for PBXNativeTarget "BullingtongConversionCalcUITests" */;
+			buildPhases = (
+				68B16D65225BA78D00A74BEB /* Sources */,
+				68B16D66225BA78D00A74BEB /* Frameworks */,
+				68B16D67225BA78D00A74BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68B16D6B225BA78D00A74BEB /* PBXTargetDependency */,
+			);
+			name = BullingtongConversionCalcUITests;
+			productName = BullingtongConversionCalcUITests;
+			productReference = 68B16D69225BA78D00A74BEB /* BullingtongConversionCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68B16D42225BA78A00A74BEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Graeson Bullington";
+				TargetAttributes = {
+					68B16D49225BA78A00A74BEB = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					68B16D5D225BA78D00A74BEB = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 68B16D49225BA78A00A74BEB;
+					};
+					68B16D68225BA78D00A74BEB = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 68B16D49225BA78A00A74BEB;
+					};
+				};
+			};
+			buildConfigurationList = 68B16D45225BA78A00A74BEB /* Build configuration list for PBXProject "BullingtongConversionCalc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68B16D41225BA78A00A74BEB;
+			productRefGroup = 68B16D4B225BA78A00A74BEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68B16D49225BA78A00A74BEB /* BullingtongConversionCalc */,
+				68B16D5D225BA78D00A74BEB /* BullingtongConversionCalcTests */,
+				68B16D68225BA78D00A74BEB /* BullingtongConversionCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68B16D48225BA78A00A74BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B16D58225BA78C00A74BEB /* LaunchScreen.storyboard in Resources */,
+				68B16D55225BA78C00A74BEB /* Assets.xcassets in Resources */,
+				68B16D53225BA78B00A74BEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B16D5C225BA78D00A74BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B16D67225BA78D00A74BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68B16D46225BA78A00A74BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B16D4E225BA78B00A74BEB /* AppDelegate.swift in Sources */,
+				68B16D7E225BBB9D00A74BEB /* ConverterViewController.swift in Sources */,
+				68B16D80225BC90400A74BEB /* ConverterStruc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B16D5A225BA78D00A74BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B16D63225BA78D00A74BEB /* BullingtongConversionCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B16D65225BA78D00A74BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B16D6E225BA78D00A74BEB /* BullingtongConversionCalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68B16D60225BA78D00A74BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68B16D49225BA78A00A74BEB /* BullingtongConversionCalc */;
+			targetProxy = 68B16D5F225BA78D00A74BEB /* PBXContainerItemProxy */;
+		};
+		68B16D6B225BA78D00A74BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68B16D49225BA78A00A74BEB /* BullingtongConversionCalc */;
+			targetProxy = 68B16D6A225BA78D00A74BEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68B16D51225BA78B00A74BEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B16D52225BA78B00A74BEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68B16D56225BA78C00A74BEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B16D57225BA78C00A74BEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68B16D70225BA78D00A74BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68B16D71225BA78D00A74BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68B16D73225BA78D00A74BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R25MAW4DYR;
+				INFOPLIST_FILE = BullingtongConversionCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.BullingtongConversionCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68B16D74225BA78D00A74BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R25MAW4DYR;
+				INFOPLIST_FILE = BullingtongConversionCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.BullingtongConversionCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68B16D76225BA78D00A74BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R25MAW4DYR;
+				INFOPLIST_FILE = BullingtongConversionCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.BullingtongConversionCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BullingtongConversionCalc.app/BullingtongConversionCalc";
+			};
+			name = Debug;
+		};
+		68B16D77225BA78D00A74BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R25MAW4DYR;
+				INFOPLIST_FILE = BullingtongConversionCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.BullingtongConversionCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BullingtongConversionCalc.app/BullingtongConversionCalc";
+			};
+			name = Release;
+		};
+		68B16D79225BA78D00A74BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R25MAW4DYR;
+				INFOPLIST_FILE = BullingtongConversionCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.BullingtongConversionCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BullingtongConversionCalc;
+			};
+			name = Debug;
+		};
+		68B16D7A225BA78D00A74BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R25MAW4DYR;
+				INFOPLIST_FILE = BullingtongConversionCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.BullingtongConversionCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BullingtongConversionCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68B16D45225BA78A00A74BEB /* Build configuration list for PBXProject "BullingtongConversionCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B16D70225BA78D00A74BEB /* Debug */,
+				68B16D71225BA78D00A74BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B16D72225BA78D00A74BEB /* Build configuration list for PBXNativeTarget "BullingtongConversionCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B16D73225BA78D00A74BEB /* Debug */,
+				68B16D74225BA78D00A74BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B16D75225BA78D00A74BEB /* Build configuration list for PBXNativeTarget "BullingtongConversionCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B16D76225BA78D00A74BEB /* Debug */,
+				68B16D77225BA78D00A74BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B16D78225BA78D00A74BEB /* Build configuration list for PBXNativeTarget "BullingtongConversionCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B16D79225BA78D00A74BEB /* Debug */,
+				68B16D7A225BA78D00A74BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68B16D42225BA78A00A74BEB /* Project object */;
+}
