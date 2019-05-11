@@ -15,8 +15,13 @@ class ConverterViewController: UIViewController {
     @IBOutlet weak var inputDisplay: UITextField!
     
     var currentConv: Int = 0
-    var sign: Bool = false
-    var number: Double = 0
+    
+    var inputNumber = 0.0
+    var sign = false
+    
+   
+    
+    
     
     
     
@@ -29,8 +34,8 @@ class ConverterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.outputDisplay.text = "" + self.converters[currentConv].outputUnit
-        self.inputDisplay.text = "" + self.converters[currentConv].inputUnit
+        outputDisplay.text = converters[currentConv].outputUnit
+        inputDisplay.text = converters[currentConv].inputUnit
         // Do any additional setup after loading the view.
     }
     
@@ -38,29 +43,33 @@ class ConverterViewController: UIViewController {
         let conversion = UIAlertController(title: "Choose Converter", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
         
         conversion.addAction(UIAlertAction(title: converters[0].label, style: UIAlertAction.Style.default, handler: {(conversion: UIAlertAction) -> Void in
-            self.outputDisplay.text = self.converters[0].outputUnit
-            self.inputDisplay.text = self.converters[0].inputUnit
             self.currentConv = 0
+            self.outputDisplay.text = self.converters[self.currentConv].outputUnit
+            self.inputDisplay.text = self.converters[self.currentConv].inputUnit
+            
             
         }))
         
         conversion.addAction(UIAlertAction(title: converters[1].label, style: UIAlertAction.Style.default, handler: {(conversion: UIAlertAction) -> Void in
-            self.outputDisplay.text = self.converters[1].outputUnit
-            self.inputDisplay.text = self.converters[1].inputUnit
             self.currentConv = 1
+            self.outputDisplay.text = self.converters[self.currentConv].outputUnit
+            self.inputDisplay.text = self.converters[self.currentConv].inputUnit
+            
             
         }))
         
-        conversion.addAction(UIAlertAction(title: converters[2].label, style: UIAlertAction.Style.default, handler: {(conversion: UIAlertAction) -> Void in
-            self.outputDisplay.text = self.converters[2].outputUnit
-            self.inputDisplay.text = self.converters[2].inputUnit
+        conversion.addAction(UIAlertAction(title: converters[self.currentConv].label, style: UIAlertAction.Style.default, handler: {(conversion: UIAlertAction) -> Void in
             self.currentConv = 2
+            self.outputDisplay.text = self.converters[self.currentConv].outputUnit
+            self.inputDisplay.text = self.converters[self.currentConv].inputUnit
+            
         }))
         
         conversion.addAction(UIAlertAction(title: converters[3].label, style: UIAlertAction.Style.default, handler: {(conversion: UIAlertAction) -> Void in
-            self.outputDisplay.text = self.converters[3].outputUnit
-            self.inputDisplay.text = self.converters[3].inputUnit
             self.currentConv = 3
+            self.outputDisplay.text = self.converters[self.currentConv].outputUnit
+            self.inputDisplay.text = self.converters[self.currentConv].inputUnit
+            
         }))
         
         self.present(conversion, animated: true, completion: nil)
@@ -70,45 +79,84 @@ class ConverterViewController: UIViewController {
     
     
     @IBAction func clearButton(_ sender: Any) {
-        self.inputDisplay.text = self.converters[0].inputUnit
-        self.outputDisplay.text = self.converters[0].outputUnit
+        inputDisplay.text = "" + converters[currentConv].inputUnit
+        outputDisplay.text = "" + converters[currentConv].outputUnit
+        inputNumber = 0
     }
     
     
     @IBAction func numberClick(_ sender: UIButton) {
-        if sender.titleLabel!.text != "."{
-            inputDisplay.text = inputDisplay.text! + sender.titleLabel!.text!
-            if let numDub = Double(inputDisplay.text!){
-                number = numDub
+        if sender.currentTitle! != "." {
+            if let text = inputDisplay.text{
+                //index += index
+                inputDisplay.text?.insert(contentsOf: sender.currentTitle!, at: text.index(text.endIndex, offsetBy: -2))
+                let dubNum = Double(sender.currentTitle!)!
+                inputNumber = dubNum + inputNumber
+                conversions()
             }
             
-        } else{
-            inputDisplay.text = inputDisplay.text! + "."
-            if let numDub = Double(inputDisplay.text!){
-                number = numDub
+        }else{
+            if let text = inputDisplay.text{
+                
+                inputDisplay.text?.insert(".", at: text.index(text.endIndex, offsetBy: -2))
+                //index += index
+                //inputNumber = Double(text)
+                conversions()
             }
+            
         }
+
     }
     
     
     @IBAction func signChange(_ sender: UIButton) {
-        if sign == false {
-            number = number * -1
-            sign = true
-            if(inputDisplay.text != "" || inputDisplay.text == nil){
-                inputDisplay.text = "-" + inputDisplay.text!
-            }else{
-                sign = false
-                return
-            }
+        if let text = inputDisplay.text{
+            inputNumber = inputNumber * -1
+            inputDisplay.text?.insert("-", at: text.startIndex)
+            conversions()
+        }else{
+            inputDisplay.text = "-" + converters[currentConv].inputUnit
         }
-        else{
-            number = number * -1
-            sign = false
-            inputDisplay.text = String(number)
-            }
+       
         
     }
+    func f2C(_ fahrenheit: Double) -> Double {
+        return ((fahrenheit - 32) * (5/9))
+    }
+    func c2F(_ celcius: Double) -> Double {
+        return celcius * (9/5) + 32
+    }
+    func km2Mi(_ kilometers: Double) -> Double {
+        return 0.62 * kilometers
+    }
+    func mi2Km(_ miles: Double) -> Double {
+        return miles * 1.61
+    }
+    
+    func conversions() {
+       
+            
+            var outNum: Double
+            
+            switch currentConv{
+            case 0:
+                outNum = f2C(inputNumber)
+            case 1:
+                outNum = c2F(inputNumber)
+            case 2:
+                outNum = mi2Km(inputNumber)
+            case 3:
+                outNum = km2Mi(inputNumber)
+            default:
+                return
+            }
+            
+            
+            outputDisplay.text = "\(outNum)"
+        
+    }
+    
+    
     
     
     
